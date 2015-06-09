@@ -1,6 +1,0 @@
-410kern/misc/semisolver.o: 410kern/misc/semisolver.c \
- 410kern/misc/semisolver.h 410kern/misc/sudoku.h
-
-410kern/misc/semisolver.h:
-
-410kern/misc/sudoku.h:

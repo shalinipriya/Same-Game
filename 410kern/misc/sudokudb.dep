@@ -1,3 +1,0 @@
-410kern/misc/sudokudb.o: 410kern/misc/sudokudb.c 410kern/misc/sudokudb.h
-
-410kern/misc/sudokudb.h:

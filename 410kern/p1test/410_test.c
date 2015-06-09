@@ -37,11 +37,11 @@ void tick(unsigned int numTicks)
 int
 kernel_main(mbinfo_t *mbinfo, int argc, char **argv, char **envp)
 {
-    if(handler_install(tick) < 0) {
+/*    if(handler_install(tick) < 0) {
       panic("oh noes! where are my handlers");
     }
-
-    enable_interrupts();
+*/
+    //enable_interrupts();
 
     clear_console();
 
@@ -50,16 +50,17 @@ kernel_main(mbinfo_t *mbinfo, int argc, char **argv, char **envp)
     set_term_color(FGND_GREEN | BGND_BLACK);
 
     set_cursor(12, 34);
+    show_cursor();
     printf("Hello World!\n");
     set_cursor(15, 34);
     printf("Type \"cat\" now: \n");
 
-    wait_char('c'); putbyte('d');
-    wait_char('a'); putbyte('o');
-    wait_char('t'); putbyte('g');
-    set_cursor(16, 25);
-    printf("That took %d seconds\n", seconds);
-    printf("Yay kitties! - now what if you type \"dog\"?");
+   // wait_char('c'); putbyte('d');
+   // wait_char('a'); putbyte('o');
+   // wait_char('t'); putbyte('g');
+   // set_cursor(16, 25);
+   // printf("That took %d seconds\n", seconds);
+   // printf("Yay kitties! - now what if you type \"dog\"?");
     while(1)
       continue;
 }

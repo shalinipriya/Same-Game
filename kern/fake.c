@@ -16,7 +16,7 @@ int handler_install(void (*tickback)(unsigned int))
   return -1;
 }
 
-int putbyte( char ch )
+/*int putbyte( char ch )
 {
   return 0; 
 }
@@ -73,7 +73,7 @@ get_char( int row, int col )
 {
   return 0;
 }
-
+*/
 int
 readchar(void)
 {
